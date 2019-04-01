@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Segoe UI";
+    color: #fff;
+}
+
+body {
+    background: #333;
+}
+
+#yes {
+    background: rgb(50, 200, 100);
+    color: #222;
+}
+
+#no {
+    background: rgb(255, 100, 100);
+    color: #222;
+}
+
+.avatarImages {
+    width: 8vh;
+    height: 8vh;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color: transparent;
+}
+
+#email {
+    color: #222;
+    width: 100%;
+    min-height: 100px;
+    height: 10%;
+    font-size: 3vw;
+    text-align: center;
+    border: none;
+    float: left;
+}
+
+#password {
+    color: #222;
+    width: 100%;
+    min-height: 100px;
+    height: 10%;
+    font-size: 3vw;
+    text-align: center;
+    border: none;
+    float: left;
+}
+
+#submit {
+    background: rgb(50, 200, 100);
+    width: 100%;
+    min-height: 100px;
+    height: 10%;
+    border: none;
+    float: left;
+}
+
+p {
+    font-size: 3vw;
+}
+
+button {
+    border: none;
+    outline: none;
+    width: 50%;
+    height: 10vh;
+    min-width: 100px;
+    min-height: 100px;
+    color: #333;
+    font-size: 3vw;
+}
+
+.page {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    vertical-align: text-top;
+}
+
+.menu {
+    width: 100vw; 
+    background-color: #333;
+    color: #fff;
+    height: 50px;
+    user-select: none;
+}
+
+.header {
+    text-align: center;
+}
+
+.content {
+    height: 600px;
+}
+
+.feature-1 {
+    text-align: center;
+    font-size: 2vh;
+    color: #fff;
+    position: relative;
+}
+
+.feature-2 {
+    font-size: 2vh;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+    body {
+        font-size: 2vw;
+    }
+    .nav-content {
+        width: auto;
+        height: 50%;
+        text-align: center;
+        margin: auto;
+        float: left;
+    }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+    body {
+        font-size: 2vw;
+    }
+    .feature-1, .feature-2 {
+        width: 50%;
+    }
+    .nav-content {
+        width: auto;
+        height: 50%;
+        text-align: center;
+        margin: auto;
+        float: left;
+    }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+    body {
+        font-size: 2vw;
+    }
+    .page {
+        width: 960px;
+        margin: 0 auto;
+    }
+    .feature-1, .feature-2 {
+        width: 50%;
+    }
+    .feature-1 {
+        font-size: 2vw;
+    }
+    .header {
+        height: 400px;
+    }
+    .content {
+        order: 2;
+    }
+    .nav-content {
+        width: auto;
+        height: auto;
+        text-align: center;
+        margin: auto;
+        float: left;
+    }
+}
+
+#dogs, #memes {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    color: #fff;
+    width: 100%;
+    height: 50%;
+    margin: auto;
+    float: left;
+}
